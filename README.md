@@ -8,7 +8,7 @@ A Python wrapper for Intel Vtune ITT API, to mark the start/stop of a task in vt
 ```python
 import vtune
 domain = vtune.__itt_domain_create("my domain")
-handle = vtune.__itt_string_handle_create("my handle")
+handle = vtune.__itt_string_handle_create("my task")
 vtune.__itt_task_begin(domain, handle)
 # Do some heavy task...
 vtune.__itt_task_end(domain)
